@@ -20,6 +20,14 @@ var blogSchema = new mongoose.Schema({
 
 var Blog = mongoose.model("Blog",blogSchema);
 
+//Testing mongoDB database
+// Blog.create({
+//   title: "Oklahoma",
+//   image: "https://farm6.staticflickr.com/5181/5641024448_04fefbb64d.jpg",
+//   body:"Hello, this is a blog post"
+// });
+
+
 //Restful Routes
 app.get("/",function(req,res){
    res.redirect("/blogs")
